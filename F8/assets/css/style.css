@@ -1,0 +1,76 @@
+/* .box-1 không có chiều cao, vì .parent-1 mặc định height: auto */
+*{
+  /* background-image: url(https://i.pinimg.com/564x/7c/71/50/7c7150e39bf0021e5b1263d18c5ab539.jpg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.parent-1 .box-1 {
+  width: 100%;
+  height: 100pt;
+  background-color: #FBAB7E;
+  
+
+}
+.parent-1 .box-1::before{
+  width: 50px;
+  height: 50px;
+  content: "";
+  display: block;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+.parent-1 .box-1::after{
+  width: 50px;
+  height: 50px;
+  content: "";
+  display: block;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+::selection{ 
+  background-color: #FFFB7D;
+
+}
+.parent-2 {
+  /* Hãy thử comment height lại để thấy sự thay đổi */
+  height: 400px;
+  background-color: #ccc;
+}
+
+/* .box-2 có chiều cao, vì .parent-2 được set height */
+.parent-2 .box-2 {
+  /* 30% của 400px */
+  height: 30%;
+  background-color: orange;
+}
+h1:active{
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+li:first-child{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+li:last-child{
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: purple;
+  
+}
+.container::after{
+  content: "";
+  width: 150px;
+  height: 100px;
+  background-color: yellow;
+  display: block;
+
+}

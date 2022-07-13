@@ -1,0 +1,13 @@
+1.Những thành phần thường thấy trên giao diện website
+  a.Header
+  b. Navigation (thanh điều hướng)
+  c.Breadcrum (thanh địa chỉ trong trang để nhận biết user đang ở đâu trong trang web)
+  d.Sidebar
+  e. Slider (hiển thị nội dung trong web thường là image)
+  f.Content (Nội dụng chính)
+  H.Footer (Chân trang)
+
+2.The Reponsive web
+  1.pc pc >= 1024px
+  2.Tablet: 740px <= Tablet <=1024px 
+  3.Mobile:   mobile <= 740px

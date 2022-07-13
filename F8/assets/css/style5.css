@@ -1,0 +1,17 @@
+/* *{
+  background-image: url(https://i.pinimg.com/564x/7c/71/50/7c7150e39bf0021e5b1263d18c5ab539.jpg);
+  background-repeat: no-repeat;
+} */
+.box {
+  width: 500px;
+  height: 500px;
+  background-image: url(https://fullstack.edu.vn/assets/images/f8_avatar.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  border: 20px dashed purple;
+  padding: 20px;
+  box-sizing: border-box; 
+  background-origin: border-box;
+  background-position: bottom left;
+  
+}
