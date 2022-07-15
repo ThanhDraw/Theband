@@ -1,7 +1,19 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
+html{
+  font-size: 16px;
+}
+
+body{
+  height: 50vh;
+  display: flex;
+  flex-direction:column;
+  font-family: "Helvetica Neue";
+  background-color: #f4f4f5;
+  
+}
+
+body > div {
+  margin: auto;
 }
 
 html{
@@ -71,35 +83,100 @@ body > div{
 
 }
 
+ /* chúng ta sẽ css cái btn nào đứng cạnh thg btn
+ ở đằng sau
+ */
 
+ #toast{
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 9999;
+}
 
 .toast{
   display: flex;
+  flex-direction: row;
   align-items: center;
   background: #fff;
   border-radius: 2px;
   padding: 20px 0;
+  min-width: 400px;
+  max-width: 450px;
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  transition: all linear 0.3s;
+  /* margin-top: 160px; */
+}
+
+@keyframes slideInleft{
+  from{
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to{
+    opacity: 1;
+    transform: translateX(calc(0));
+
+  }
+}
+
+@keyframes fadeOut{
+  to{
+    opacity: 0;
+  }
 }
 .toast + .toast{
-  
+  margin-top: 24px;
 }
 .toast__icon{
   padding: 0 16px;
   font-size: 24px;
 }
 .toast__body{
-
+  flex-grow: 1;
 }
 .toast__title{
-  margin: 0%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+
 }
 .toast__msg{
   margin: 0;
+  
 }
 .toast__close{
   padding: 0 16px;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.toast--success{
+  border-color: #47d864;
+}
+.toast--success .toast__icon{
+  color:#47d864;
+}
+
+.toast--Info{
+  border-color: #2f86eb; 
+}
+.toast--Info .toast__icon{
+  color:#2f86eb;
+}
+.toast--warning{
+  border-color: #ffc021;
+}
+.toast--warning .toast__icon{
+  color:#ffc021;
+}
+.toast--error{
+  border-color: #D61C4E;
+}
+.toast--error .toast__icon{
+  color:#D61C4E;
 }
