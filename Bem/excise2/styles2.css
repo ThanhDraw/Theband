@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue";
+  background-color: #f4f4f5;
+  
+}
+body > div{
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  min-width: 140px;
+  transition: opacity 0.2s linear;
+}
+
+ /* chúng ta sẽ css cái btn nào đứng cạnh thg btn
+ ở đằng sau
+ */
+.btn + .btn{
+  margin-left: 16px;
+}
+
+.btn--size-l{
+  padding: 16px 56px;
+}
+.btn-size-s{
+  padding: 8px 32px;
+}
+.btn:hover{
+  opacity: 0.7;
+}
+
+
+.btn--success{
+  background-color: #5FD068;
+
+
+}
+.btn--warning{
+  background-color: #F9D923;
+
+}
+.btn--danger{
+  background-color: #F37878;
+}
+
+.btn--disable{
+  opacity: 0.5 !important;
+  cursor: default;
+
+}
+
+
+
+.toast{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px 0;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+}
+.toast + .toast{
+  
+}
+.toast__icon{
+  padding: 0 16px;
+  font-size: 24px;
+}
+.toast__body{
+
+}
+.toast__title{
+  margin: 0%;
+}
+.toast__msg{
+  margin: 0;
+}
+.toast__close{
+  padding: 0 16px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
